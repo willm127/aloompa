@@ -88,7 +88,7 @@ class _RapperCardState extends State<RapperCard> {
                       tag: _rapper.id,
                       child: FadeInImage(
                         fadeInCurve: Curves.easeInQuad,
-                        fadeInDuration: Duration(seconds: 1),
+                        fadeInDuration: const Duration(seconds: 1),
                         fit: BoxFit.cover,
                         placeholder: const AssetImage('assets/thumb.png'),
                         image: _rapper.image != null

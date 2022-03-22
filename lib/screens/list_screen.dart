@@ -102,7 +102,10 @@ class _ListScreenState extends State<ListScreen> {
                           : ListView.builder(
                               itemCount: rappersFiltered.length,
                               itemBuilder: (BuildContext ctx, int i) {
-                                return RapperCard(rappersFiltered[i]);
+                                return RapperCard(
+                                  rappersFiltered[i],
+                                  key: Key(rappersFiltered[i].id),
+                                );
                               }),
                 ),
               ],

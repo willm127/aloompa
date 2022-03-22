@@ -18,8 +18,6 @@ class DetailsScreen extends StatelessWidget {
     final first = allText[0];
     allText.removeAt(0);
 
-    print(first);
-
     return Scaffold(
       drawerEdgeDragWidth: MediaQuery.of(context).size.width,
       appBar: AppBar(title: Text(rapper.name)),
@@ -43,9 +41,9 @@ class DetailsScreen extends StatelessWidget {
                   bottom: 0,
                   right: 0,
                   child: AnimatedContainer(
-                    duration: Duration(seconds: 1),
+                    duration: const Duration(seconds: 1),
                     curve: Curves.bounceIn,
-                    padding: EdgeInsets.all(10),
+                    padding: const EdgeInsets.all(10),
                     color: Colors.black54,
                     child: Text(
                       rapper.name,
